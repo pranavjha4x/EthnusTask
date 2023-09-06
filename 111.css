@@ -1,0 +1,73 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Vertical Navbar styles */
+.vertical-navbar {
+    background-color: blue;
+    width: 200px;
+    height: 100%;
+    position: fixed;
+}
+
+.vertical-navbar ul {
+    padding: 20px;
+}
+
+.vertical-navbar li {
+    margin-bottom: 10px;
+}
+
+.vertical-navbar a {
+    display: block;
+    color: white;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.vertical-navbar a.active {
+    background-color: yellow;
+}
+
+/* Horizontal Navbar styles */
+.horizontal-navbar {
+    background-color: lightgray;
+}
+
+.horizontal-navbar ul {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.horizontal-navbar li {
+    margin: 0 10px;
+}
+
+.horizontal-navbar a {
+    color: black;
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.horizontal-navbar a.active {
+    background-color: darkgray;
+    border: 1px solid gray;
+}
